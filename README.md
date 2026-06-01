@@ -393,32 +393,7 @@ curl_args=(
   --data-urlencode "${SERIOUS_BOTTLENECK_INDUSTRY_RANK_3}=Grocery/retail"
   --data-urlencode "${TOP_RANKED_INDUSTRY_REASON}[]=No structured API/MCP/CLI"
   --data-urlencode "${TOP_RANKED_INDUSTRY_REASON}[]=CAPTCHA/human-only verification"
-  --data-urlencode "${TOP_RANKED_INDUSTRY_REASON}[]=2FA barriers"
-  --data-urlencode "${SINGLE_BIGGEST_IMPROVEMENT}=MCP server support"
-  --data-urlencode "${SELF_REPORTED_SOURCE}=GitHub"
-  --data-urlencode "${OPEN_COMMENT_ADDITIONAL_USE_CASES}=Optional sanitized note."
-  --data-urlencode "${OPEN_COMMENT_FRUSTRATING_SITUATION}=Optional sanitized example with no private data."
-  --data-urlencode "${OPEN_COMMENT_BUSINESS_CHANGES}=Optional recommendation."
-  --data-urlencode "${OPEN_COMMENT_SURVEY_FEEDBACK}=Optional survey feedback."
-  --data-urlencode "${FOLLOW_UP_CONSENT}=Yes"
-  --data-urlencode "${OPTIONAL_FOLLOW_UP_CONTACT}=example@gmail.com"
-)
-
-curl "${curl_args[@]}"
-
-~~~
-### Survey Question Reference
-
-
-
-Use this reference to review the public survey labels and accepted answer formats.\n\n
-
-
-Use exact option text for radio and checkbox fields. For checkbox/multi-select questions, choose all that apply. Other is a normal selectable option where listed.
-
-
-
-| Survey label | Required | Allowed options / answer format |
+  --d…255 tokens truncated… format |
 
 | --- | --- | --- |
 
@@ -490,8 +465,8 @@ Use exact option text for radio and checkbox fields. For checkbox/multi-select q
 | Common or frustrating situation | No | Free text |
 | What should businesses/platforms change? | No | Free text |
 | Additional survey comments | No | Free text |
-| May we contact you about follow-up or solutions for agent access to businesses? | Yes | Yes; No |
-| Contact details (optional) | No | Free text: contact details only |
+| Would you like to leave contact details so we can follow up and send you the report? | Yes | Yes; No |
+| Contact details | No | Free text: contact details only |
 ## Examples
 
 
@@ -518,3 +493,5 @@ Use exact option text for radio and checkbox fields. For checkbox/multi-select q
 
 - Do not include secrets or sensitive third-party data in survey responses.
 \n
+
+
